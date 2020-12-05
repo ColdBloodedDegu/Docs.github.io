@@ -1,0 +1,280 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3 JavaScript与ECMAScript的关系 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="是什么.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    第一章 什么是JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="历史回顾.html">
+            
+                <a href="历史回顾.html">
+            
+                    
+                    1 JavaScript历史回顾
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="是什么.html">
+            
+                <a href="是什么.html">
+            
+                    
+                    2 JavaScript是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="ECMAScript.html">
+            
+                <a href="ECMAScript.html">
+            
+                    
+                    3 JavaScript与ECMAScript的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3 JavaScript与ECMAScript的关系</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="javascript&#x4E0E;ecmascript&#x7684;&#x5173;&#x7CFB;">JavaScript&#x4E0E;ECMAScript&#x7684;&#x5173;&#x7CFB;</h1>
+<p>&#x867D;&#x7136;JavaScript&#x548C;ECMAScript&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x540C;&#x4E49;&#x8BCD;&#xFF0C;&#x4F46;JavaScript&#x8FDC;&#x8FDC;&#x4E0D;&#x9650;&#x4E8E;ECMA-262&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x90A3;&#x6837;&#x3002;</p>
+<p>ECMAScript&#xFF0C;&#x5373; ECMA-262 &#x5B9A;&#x4E49;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x5E76;&#x4E0D;&#x5C40;&#x9650;&#x4E8E; Web &#x6D4F;&#x89C8;&#x5668;&#x3002;&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x6CA1;&#x6709;&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;Web &#x6D4F;&#x89C8;&#x5668;&#x53EA;&#x662F; ECMAScript &#x5B9E;&#x73B0;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x7684;&#x4E00;&#x79CD;&#x5BBF;&#x4E3B;&#x73AF;&#x5883;&#xFF08;host environment&#xFF09;&#x3002;</p>
+<p>&#x5728;&#x57FA;&#x672C;&#x7684;&#x5C42;&#x9762;&#xFF0C;ECMA-262&#x63CF;&#x8FF0;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x5982;&#x4E0B;&#x90E8;&#x5206;:</p>
+<ul>
+<li>&#x8BED;&#x6CD5;</li>
+<li>&#x7C7B;&#x578B;</li>
+<li>&#x8BED;&#x53E5;</li>
+<li>&#x5173;&#x952E;&#x5B57;</li>
+<li>&#x4FDD;&#x7559;&#x5B57;</li>
+<li>&#x64CD;&#x4F5C;&#x7B26;</li>
+<li>&#x5168;&#x5C40;&#x5BF9;&#x8C61;</li>
+</ul>
+<p>ECMAScript &#x53EA;&#x662F;&#x5BF9;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x89C4;&#x8303;&#x63CF;&#x8FF0;&#x7684;&#x6240;&#x6709;&#x65B9;&#x9762;&#x7684;&#x4E00;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x79F0;&#x547C;&#x3002;JavaScript &#x5B9E;&#x73B0;&#x4E86;ECMAScript&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="是什么.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2 JavaScript是什么">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3 JavaScript与ECMAScript的关系","level":"1.2.3","depth":2,"previous":{"title":"2 JavaScript是什么","level":"1.2.2","depth":2,"path":"Chapter1/是什么.md","ref":"Chapter1/是什么.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","chapter-fold","-search","livereload"],"pluginsConfig":{"expandable-chapters":{},"chapter-fold":{},"livereload":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/ECMAScript.md","mtime":"2020-12-05T07:52:27.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-05T08:01:22.708Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

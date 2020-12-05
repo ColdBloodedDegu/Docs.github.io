@@ -1,7 +1,0 @@
-{
-    "plugins":[
-        "-search",
-        "-livereload",
-        "toggle-chapters"
-    ]
-}
